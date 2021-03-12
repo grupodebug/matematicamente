@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <!-- Lucas Cherobim -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./game/css/index.css">
+    <link rel="stylesheet" href="./game/css/notificacoes.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+  <div class="box-notificacoes">
+    <!-- aqui serão inseridas as notificações -->
+  </div>
+ 
+ <div class="content">
+
+    
+
+    <img src="./img/kids/fundo.png" alt="">
+
+    <audio  id="correct" style="display: none;" muted>
+        <source id="correct" src="./game/sounds/correct.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio  style="display: none;" id="incorrect" muted>
+        <source src="./game/sounds/error.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="game">
+
+        <div class="menuCentro">
+            <div class="menu">
+                <span id="question"></span>
+            </div>
+    
+            <div id="container">
+                <canvas id="video-com-flip" width="900" height="600"></canvas>
+                <canvas id="mapa-de-movimento" width="900" height="600"></canvas>
+                <video  id="video" autoplay width="900" height="600"></video>
+                <!-- <div id="questions"><span id="quest"></span></div> -->
+                <div id="tecla0" data-tipo="a" class="target"></div>
+                <div id="tecla1" data-tipo="b" class="target"></div>
+                <div id="tecla2" data-tipo="c" class="target"></div>
+                <div id="tecla3" data-tipo="d" class="target"></div>
+            </div>
+    
+            <div class="options">
+                <div class="options-container">
+                    <div class="life">
+                     <div class="itens">
+                        <img src="img/outros/fechar.svg" alt="">
+                        <span id="erro">0</span>
+                     </div>
+                        <span id="">Erro(s)</span>
+                    </div>
+        
+                    <div class="coins">
+                     <div class="itens">
+                        <img src="img/outros/verifica.svg" alt="">
+                        <span id="acerto">0</span>
+                     </div>
+                     <span id="">Acerto(s)</span>
+                    </div>
+                    
+                    <div class="fase">
+                       <div class="itens">
+                        <img src="img/outros/pyramid.svg" alt="">
+                        <span id="etapa">0</span>
+                       </div>
+                       <span id="">° Pergunta</span>
+                    </div>
+              
+                    <div class="clock">
+                       <div class="itens">
+                        <img src="img/outros/chronometer.svg" alt="">
+                        <span id="tempo">0</span>
+                       </div>
+                       <span id="">Tempo</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  
+
+  </div>
+
+
+
+  <script   src="game/index.js"></script>
+  <script  type="module" src="game/game.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</body>
+<script>
+
+
+</script>
+
+</html>

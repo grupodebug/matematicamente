@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATICAMENTE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <img id ="fundo" src="./img/outros/logo2.jpg" alt=""> -->
+
+    <div class="container">
+
+     <div class="start">
+         <img id="logo" src="./img/outros/logo.svg" alt="">
+         <div class="menu">
+            <h1 id="game-name">MatematicaMENTE</h1>
+            <!-- <h2>Fim de jogo</h2> -->
+            <div class="instructions">
+                <div class="icon prb"><img src="./img/outros/parabens.svg" alt=""><h1>Parabéns, você chegou ao final do jogo.</h1></div>
+                <!-- <img id="testephoto" alt=""> -->
+                <ul >
+                    <li class="icon"><div class="div-itens"><img src="./img/outros/verifica.svg" alt=""><span>Acertos</span></div><span id="acertos">0</span> </li>
+                    <li class="icon"><div class="div-itens"><img src="./img/outros/fechar.svg" alt=""><span>Erros</span></div><span id="erros">0</span> </li>
+                    <li class="icon"><div class="div-itens"><img src="./img/outros/chronometer.svg" alt=""><span>Tempo de jogo</span></div><span id="tempo">00:00</span> </li>
+                </ul>
+            </div>
+         </div>
+        <section class="bottom-buttons">
+            <button><a href="Game.html">Tentar Novamente</a></button>
+            <button id="home"><a href="Inicio.html">Tela Inicial</a></button>
+        </section>
+
+     </div>
+
+    </div>
+   
+</body>
+<style>
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    font-weight: 600;
+    margin: 0;
+}
+
+section.bottom-buttons {
+    max-width: 403px;
+    display: flex;
+}
+
+#home{
+    margin-left: 10px;
+    opacity: 0.85;
+}
+#home:hover{
+    opacity: 1;
+}
+body{
+    background:  url('./img/kids/fundo.png') no-repeat  ;
+    background-size: 100%, 100% auto;
+}
+#game-name{
+    color: #389ed5;
+    /* -o-text-overflow: clip;
+	text-overflow: clip;
+	 text-shadow: 5px 5px 0 rgb(255,210,23) , 10px 10px 0 rgb(90,199,255) , 15px 14px 0 rgb(255,210,23) , 20px 20px 0 rgb(90,199,255) ; 
+	text-shadow: 3px 3px 0 #389ed5 , 5px 5px 0 rgba(90, 199, 255, 0.8) , 7px 7px 0 #389ed5 ; */
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.menu h2{
+    margin-top: 15px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 15px 35px;
+    /* flex-direction: column; */
+}
+.instructions li :nth-child(1){
+    margin-left: 30px;
+}
+.icon.prb {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.div-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.div-itens span{
+    padding: 10px;
+}
+.prb h1{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 40px;
+    margin-left: 25px;
+    font-weight: 600;
+}
+#acertos, #erros, #tempo{
+    margin-left: 20px;
+    margin-bottom: 35px;
+    font-size: 55px;
+}
+
+#fundo{
+    /* z-index: 1; */
+  
+    position: absolute;
+    width: 100%;
+    height: 97%;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.instructions ul{
+    display: flex;
+    margin-top: 40px;
+}
+    .container{
+        
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 100%;
+        display:flex;
+        z-index: 1111;
+        justify-content: center;
+        position: absolute;
+        /* align-items: center; */
+        }
+        .start{
+            -webkit-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+            position: absolute;
+            top: 5%;
+            width: 1170px;
+            height: 800px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        img{
+            top: 20px;
+            width: 60px;
+        }
+
+        #logo{
+            width: 100px;
+            height: 100px;
+        }
+
+        .menu{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .menu span{
+            /* font-family: sans-serif; */
+            /* margin-top: 10px; */
+            /* font-size: 18px; */
+            text-align: center;
+        }
+        /* button{
+            margin-top: 50px;
+            width: 220px;
+            height: 50px;
+            border: 1px solid #ccc;
+            background-color: #18C6F5;
+            color: aliceblue;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #1AA5F5;
+        } */
+
+        .start button:hover {
+    background-color: #1AA5F5;
+    text-decoration: none;
+}
+.start button {
+    margin-top: 50px;
+    width: 200px;
+    height: 70px;
+    border: 1px solid #ccc;
+    color: aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%);
+    border-bottom: 4px solid #2b8bc6;
+    box-shadow: 0px 3px 0px 0px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    padding: 8px 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(()=>{
+        var p = localStorage.getItem('erros');
+        if(p!=null){
+          document.getElementById('erros').innerText = p;  
+        }else{
+            document.getElementById('erros').innerText = 0; 
+        }
+        
+
+        var positivo = localStorage.getItem('acertos');
+        if(positivo!=null){
+          document.getElementById('acertos').innerText = positivo;  
+        }else{
+            document.getElementById('acertos').innerText = 0; 
+        }
+
+        var tempo = localStorage.getItem('Tempo');
+        if(tempo!=null){
+          document.getElementById('tempo').innerText = tempo;  
+        }else{
+            document.getElementById('tempo').innerText = "00:00"; 
+        }
+        const photo = localStorage.getItem('img');
+        // document.getElementById('testephoto').setAttribute('src', photo)
+        
+        localStorage.removeItem('acertos');  
+        localStorage.removeItem('erros'); 
+        localStorage.removeItem('Tempo');
+    })
+ 
+</script>
+</html>

@@ -1,0 +1,48 @@
+{
+
+  
+    "base": [
+        {
+            "pergunta":"Quanto é 1 + 1 ?",
+            "tipo":"0",
+            "resposta":"2",
+            "distratores": [
+                    "3",
+                    "4",
+                    "15"
+            ]
+        },
+        {
+            "pergunta":"Em qual dos relógios são oito horas?",
+            "tipo":"1",
+            "resposta":"img/time/oito.svg",
+            "distratores": [
+                "img/time/cinco.svg",
+                "img/time/nove.svg",
+                "img/time/onze.svg"
+            ]
+        },
+        {
+            "pergunta":"Qual dos números é par ?",
+            "tipo":"0",
+            "resposta":["6", "8", "10", "4"],
+            "distratores": [
+                    "13",
+                    "3",
+                    "9",
+                    "11",
+                    "15",
+                    "1"
+            ]
+        }
+      
+  
+
+    
+
+]
+
+
+
+
+}

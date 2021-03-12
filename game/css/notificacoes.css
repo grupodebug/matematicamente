@@ -1,0 +1,114 @@
+/* Notificação */
+.box-notificacoes {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 10px;
+    top: 35%;
+    z-index: 999999999999;
+  }
+  
+  .notificacao-erro,
+  .notificacao-sucesso,
+  .notificacao-sucesso-12,
+  .notificacao-codigo {
+    padding: 25px 40px;
+    border-radius: 4px;
+    border: 1px solid #ff0c35;
+    background: #FFE6EA;
+    color: #ff0c35;
+    /* position: fixed;
+    right: 10px;
+    top: 15%;
+    z-index: 9999; */
+    animation: showErro .3s forwards;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+    font-family: Montserrat, 'sans-serif';
+    margin-bottom: 5px;
+  }
+  
+  .notificacao-sucesso.ativo,
+  .notificacao-erro.ativo,
+  .notificacao-sucesso-12.ativo,
+  .notificacao-codigo.ativo {
+    display: block;
+    position: fixed;
+    /* top: 0; */
+    right: 10px;
+  }
+  
+  .notificacao-codigo {
+    border: none;
+    color: gray;
+    background: rgba(0, 0, 0, .9) !important;
+  }
+  
+  .notificacao-sucesso,
+  .notificacao-sucesso-12 {
+    border: 1px solid #28d5a7;
+    color: #28d5a7;
+    background: #E9FBF6;
+  }
+  
+  .notificacao-erro::after,
+  .notificacao-sucesso::after,
+  .notificacao-sucesso-12::after,
+  .notificacao-codigo::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    background: #ff0c35;
+    left: 0;
+    bottom: 0;
+    animation: timeNote 5s linear forwards;
+    animation-delay: 1s;
+    border-radius: 4px;
+  }
+  
+  .notificacao-codigo::after {
+    background: #FFF;
+  }
+  
+  .notificacao-sucesso::after,
+  .notificacao-sucesso-12::after {
+    background: #28d5a7;
+  }
+  
+  @keyframes timeNote {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  .notificacao-erro h3,
+  .notificacao-sucesso h3,
+  .notificacao-sucesso-12 h3,
+  .notificacao-codigo h3 {
+    font-size: 35px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .notificacao-sucesso-12 h3 {
+    font-size: 35px;
+    line-height: 1.7;
+  }
+  
+  @keyframes showErro {
+    from {
+      opacity: 0;
+      transform: translate3d(30px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }

@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <!-- Lucas Cherobim -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./fase1/css/index.css">
+  <link rel="stylesheet" href="./fase1/css/notificacoes.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+  <div class="box-notificacoes">
+    <!-- aqui serão inseridas as notificações -->
+  </div>
+
+  <input type="hidden" id="fase" value="fase1">
+  <video  id="video" autoplay width="800" height="500"></video>
+
+
+ <div class="content">
+
+    <img src="./img/outros/fundo-matematicamente.jpg" alt="">
+
+    <div class="game">
+      <div class="menu">
+        <span id="question"></span>
+      </div>
+
+      <audio  id="correct" style="display: none;"  muted>
+        <source id="correct" src="./fase1/sounds/correct.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio  style="display: none;" id="incorrect" muted>
+
+        <source src="./fase1/sounds/error.mp3" type="audio/mp3"  >
+        Your browser does not support the audio element.
+      </audio>
+
+
+      <div id="container">
+        <canvas id="video-com-flip" width="800" height="500"></canvas>
+        <!-- <div id="questions"><span id="quest"></span></div> -->
+        <div id="tecla0" class="target"></div>
+        <div id="tecla1"  class="target"></div>
+        <div id="tecla2"  class="target"></div>
+        <div id="tecla3"  class="target"></div>
+        
+      </div>
+
+      <div class="options">
+        <div class="options-container">
+          <div class="life">
+            <img src="img/outros/fechar.svg" alt="">
+            <span id="erro">0</span>
+          </div>
+        <p>|</p>
+          <div class="coins">
+            <img src="img/outros/verifica.svg" alt="">
+            <span id="acerto">0</span>
+          </div>
+          <p>|</p>
+          <div class="fase">
+            <img src="img/outros/pyramid.svg" alt="">
+            <span id="etapa">0</span>
+          </div>
+          <p>|</p>
+          <div class="clock">
+            <img src="img/outros/chronometer.svg" alt="">
+            <span id="tempo">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  </div>
+
+  <canvas id="mapa-de-movimento" width="800" height="500"></canvas>
+
+  <script   src="fase1/index.js"></script>
+  <script  type="module" src="fase1/game.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</body>
+<script>
+
+
+</script>
+
+</html>

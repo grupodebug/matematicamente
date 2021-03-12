@@ -1,0 +1,141 @@
+{
+
+  
+    "base": [
+        {
+            "pergunta":"Quanto é 1 + 1 ?",
+            "tipo":"0",
+            "resposta":"2",
+            "distratores": [
+                    "3",
+                    "4",
+                    "15"
+            ]
+        },
+        {
+            "pergunta":"Em qual dos relógios são oito horas?",
+            "tipo":"1",
+            "resposta":"img/time/oito.svg",
+            "distratores": [
+                "img/time/cinco.svg",
+                "img/time/nove.svg",
+                "img/time/onze.svg"
+            ]
+        },
+        {
+            "pergunta":"Selecione o número que representa cinquenta e oito.",
+            "tipo":"0",
+            "resposta":"58",
+            "distratores": [
+                    "85",
+                    "508",
+                    "850"
+            ]
+        },
+        {
+            "pergunta":"O dobro de 5 é:",
+            "tipo":"0",
+            "resposta":"10",
+            "distratores": [
+                    "15",
+                    "25",
+                    "55"
+            ]
+        },
+        {
+            "pergunta":"Qual dos números é par ?",
+            "tipo":"0",
+            "resposta":["6", "8", "10", "4"],
+            "distratores": [
+                    "13",
+                    "3",
+                    "9",
+                    "11",
+                    "15",
+                    "1"
+            ]
+        },
+        {
+            "pergunta":"Qual dos números é ímpar ?",
+            "tipo":"0",
+            "resposta":[7, 3, 9, 11, 5],
+            "distratores": [
+                    12,
+                    4,
+                    8,
+                    6,
+                    10,
+                    2
+            ]
+        },
+        {
+            "pergunta":"Qual das imagens é um hexágono ?",
+            "tipo":"1",
+            "resposta":"img/hexagon/hexagon.svg",
+            "distratores": [
+                    "img/hexagon/Ellipse.svg",
+                    "img/hexagon/Polygon.svg",
+                    "img/hexagon/Rectangle.svg"
+            ]
+        },
+        {
+            "pergunta":"Quantos centímetros tem 1 metro ?",
+            "tipo":"0",
+            "resposta":"100",
+            "distratores": [
+                    "60",
+                    "70",
+                    "10"
+            ]
+        },
+        {
+            "pergunta":"Qual dos números é maior que 9 ?",
+            "tipo":"0",
+            "resposta":[10, 11, 12],
+            "distratores": [
+               1, 2, 3, 4, 5, 6, 7, 8, 9
+            ]
+        },
+        {
+            "pergunta":"Qual dos números é maior que 5 ?",
+            "tipo":"0",
+            "resposta":[7, 9, 6],
+            "distratores": [
+               1, 2, 3, 4
+            ]
+        },
+        {
+            "pergunta":"Qual dos números é primo ?",
+            "tipo":"0",
+            "resposta":[2, 3, 5, 11, 13],
+            "distratores": [
+               6, 8, 12, 10, 28
+            ]
+        },
+        {
+            "pergunta":"Qual dos números não é primo ?",
+            "tipo":"0",
+            "resposta":[6, 8, 12, 10, 28, 41 ],
+            "distratores": [
+                2, 3, 5, 11, 13
+            ]
+        },
+        {
+            "pergunta":"Qual dos números é divisivel por 5 ?",
+            "tipo":"0",
+            "resposta":[10, 5, 20, 15, 40, 50],
+            "distratores": [
+               6, 19, 9, 21, 7, 14, 36
+            ]
+        }
+
+  
+
+    
+
+]
+
+
+
+
+}
